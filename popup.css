@@ -26,6 +26,34 @@
     top: 50%;
 }
 
+.length-info {
+    display: flex;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.length-info-min {
+    color: #a0a0a0;
+}
+
+.length-info-current {
+    font-weight: 700;
+    width: 100%;
+}
+
+.length-info-current-value {
+    font-weight: 700;
+}
+
+.length-info-max {
+    color: #a0a0a0;
+}
+
+.length-slider {
+    outline: none;
+    width: 100%;
+}
+
 .password-field {
     padding: 0 0.125em;
 }
