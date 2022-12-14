@@ -1,0 +1,19 @@
+{
+    "name": "RandPass",
+    "version": "0.1.0",
+    "description": "Generates a random password",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+        ]
+      }
+    ],
+    "action": {
+      "default_title": "RandPass",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}

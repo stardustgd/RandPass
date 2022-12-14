@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="popup.css" rel="stylesheet">
+    <script src="popup.js"></script>
+    <title>RandPass</title>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1 class="header-title">RandPass</h1>
+        </div>
+    </header>
+    <div class="password-field">
+        <input class="generated-password-field" id="password-field" type="text">
+        <div class="centered">
+            <input class="generated-password-button" id="generate-button" type="button" value="Generate">
+            <div class="tooltip">
+                <span class="tooltiptext" id="textTooltip">Copy to Clipboard</span>
+                <button class="generated-password-copy" id="copy-button" onmouseout="resetCopy()">Copy</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
