@@ -22,9 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let tooltip = document.getElementById('textTooltip');
         tooltip.innerHTML = "Copied!";
+        document.getElementById('copy-icon').style.color = 'royalblue';
 
         setTimeout(() => {
             tooltip.innerHTML = "Copy";
+            document.getElementById('copy-icon').style.color = 'black';
         }, "2000");
     });
 

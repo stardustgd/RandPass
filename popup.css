@@ -19,6 +19,10 @@ button {
     margin: 0.25em 0.125em;
 }
 
+#copy-icon {
+    transition: color 0.25s ease-out;
+}
+
 div {
     display: flex;
     justify-content: space-around;
