@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    var angle = 0;
     let passField = document.getElementById('password-field');
     let generateButton = document.getElementById('generate-button');
     let slider = document.getElementById('length-slider');
@@ -8,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     generateButton.addEventListener('click', function() {
         passField.value = generatePassword(sliderValue.innerHTML);
+        angle -= 180;
+
+        document.getElementById('generate-icon').style.transform = `rotate(${angle}deg)`;
     });
 
     document.getElementById('copy-button').addEventListener('click', function() {

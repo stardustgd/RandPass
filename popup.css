@@ -93,6 +93,11 @@ input[type=text]:focus {
     padding: 0 0.125em;
 }
 
+.rotate {
+    transform: rotate(-180deg);
+    transition: 0.2s ease-out;
+}
+
 .tooltip {
     position: relative;
     display: inline-block;
