@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     let passField = document.getElementById('password-field');
+    let generateButton = document.getElementById('generate-button');
     let slider = document.getElementById('length-slider');
     let sliderValue = document.getElementById('length-value');
 
     passField.value = generatePassword();
     
-    document.getElementById('generate-button').addEventListener('click', function() {
+    generateButton.addEventListener('click', function() {
         passField.value = generatePassword(sliderValue.innerHTML);
     });
 
@@ -16,15 +17,16 @@ document.addEventListener('DOMContentLoaded', function() {
         window.getSelection().removeAllRanges();
 
         let tooltip = document.getElementById('textTooltip');
-        tooltip.innerHTML = "Copied password!";
+        tooltip.innerHTML = "Copied!";
 
         setTimeout(() => {
-            tooltip.innerHTML = "Copy to Clipboard";
+            tooltip.innerHTML = "Copy";
         }, "2000");
     });
 
     slider.oninput = function() {
         sliderValue.innerHTML = this.value;
+        passField.value = generatePassword(sliderValue.innerHTML);
     }
 });
 
@@ -39,9 +41,4 @@ function generatePassword(length = 16) {
     }
 
     return password;
-}
-
-function resetCopy() {
-    let tooltip = document.getElementById('textTooltip');
-    tooltip.innerHTML = "Copy to Clipboard";
 }
