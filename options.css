@@ -1,0 +1,69 @@
+body {
+    color: rgb(48, 57, 66);
+}
+
+button {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    color: #444;
+    margin: 0 1px 0 0;
+    min-width: 4em;
+    min-height: 2em;
+    padding: 0 10px;
+}
+
+button:active {
+    border: 1px solid rgba(95, 95, 95, 1);
+    color: black;
+}
+
+div {
+    display: block;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1;
+    padding: 0.25em 0.75em;
+}
+
+h2 {
+    color: black;
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: 1;
+    padding: 0.25em 1em;
+    margin-bottom: 0;
+}
+
+header {
+    border-bottom: 1px solid #eee;
+}
+
+input[type="text"] {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: 75px;
+    margin-left: 3px;
+    text-align: center;
+}
+
+.options {
+    padding: 1em;
+    margin-left: 1.75em;
+    margin-bottom: 1em;
+}
+
+select {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#status {
+    color: #9d9d9d;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.user-buttons {
+    margin-left: 1.3em;
+}
