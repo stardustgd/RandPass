@@ -6,5 +6,12 @@
       "default_title": "RandPass",
       "default_popup": "popup.html"
     },
+    "options_page": "options.html",
+    "permissions": [
+      "storage"
+    ],
+    "storage": {
+      "managed_schema": "schema.json"
+    },
     "manifest_version": 3
 }
