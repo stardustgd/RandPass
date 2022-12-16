@@ -20,6 +20,7 @@ button {
 }
 
 #copy-icon {
+    color: black;
     transition: color 0.25s ease-out;
 }
 
