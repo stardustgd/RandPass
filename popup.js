@@ -5,7 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let slider = document.getElementById('length-slider');
     let sliderValue = document.getElementById('length-value');
 
-    passField.value = generatePassword();
+    chrome.storage.local.get('defaultLength', function(result) {
+        let passLength = parseInt(result.defaultLength);
+        passField.value = generatePassword(passLength);
+        sliderValue.innerHTML = passLength;
+        slider.value = passLength;
+    });
     
     generateButton.addEventListener('click', function() {
         passField.value = generatePassword(sliderValue.innerHTML);
