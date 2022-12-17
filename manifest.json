@@ -10,8 +10,5 @@
     "permissions": [
       "storage"
     ],
-    "storage": {
-      "managed_schema": "schema.json"
-    },
     "manifest_version": 3
 }
