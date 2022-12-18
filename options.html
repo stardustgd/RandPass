@@ -14,10 +14,16 @@
     </header>
     <h2>Defaults</h2>
     <div class="options">
-        <select>
-            <option class="options-dropdown" value="default-length">Default Password Length</option>
-            <input type="text" id="default-length" placeholder="16">
-        </select>
+        <div>
+            <select>
+                <option class="options-dropdown" value="default-length">Default Password Length</option>
+                <input type="text" id="default-length" placeholder="16">
+            </select>
+        </div>
+        <div>
+            <label for="hidePassword">Hide password by default</label>
+            <input id="hidePassword" type="checkbox">
+        </div>
     </div>
     <div class="user-buttons">
         <button id="save">Save</button>

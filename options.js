@@ -2,12 +2,17 @@ function save_options() {
     let defaultLengthBox = document.getElementById('default-length');
     let statusMessage = document.getElementById('status');
     let length = parseInt(defaultLengthBox.value);
+    let hidePassword = false;
 
     if (isNaN(length)) return highlightError(defaultLengthBox);
     if (length <= 0 || length > 50) return highlightError(defaultLengthBox);
 
+    if (document.getElementById('hidePassword').checked)
+        hidePassword = true;
+
     chrome.storage.local.set({
-        defaultLength: length
+        defaultLength: length,
+        hidePassword: hidePassword
     }, function() {
         statusMessage.textContent = 'Options saved';
         defaultLengthBox.style.borderColor = "rgba(0, 0, 0, 0.25)"; 
@@ -21,7 +26,8 @@ function restore_options() {
     let statusMessage = document.getElementById('status');
 
     chrome.storage.local.set({
-        defaultLength: 16
+        defaultLength: 16,
+        hidePassword: false
     }, function() {
         document.getElementById('default-length').value = 16;
         statusMessage.textContent = 'Restored defaults';

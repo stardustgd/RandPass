@@ -19,6 +19,8 @@ button:active {
 
 div {
     display: block;
+    padding: 0.25em;
+    margin-bottom: 0.5em
 }
 
 h1 {
@@ -48,10 +50,14 @@ input[type="text"] {
     text-align: center;
 }
 
+input[type="checkbox"] {
+    text-align: start;
+}
+
 .options {
     padding: 1em;
     margin-left: 1.75em;
-    margin-bottom: 1em;
+    vertical-align: top;
 }
 
 select {
