@@ -30,6 +30,7 @@ function restore_options() {
         hidePassword: false
     }, function() {
         document.getElementById('default-length').value = 16;
+        document.getElementById('hidePassword').checked = false;
         statusMessage.textContent = 'Restored defaults';
         setTimeout(function() {
             statusMessage.textContent = '';
