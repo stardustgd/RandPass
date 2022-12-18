@@ -5,11 +5,19 @@ document.addEventListener('DOMContentLoaded', function() {
     let slider = document.getElementById('length-slider');
     let sliderValue = document.getElementById('length-value');
 
-    chrome.storage.local.get('defaultLength', function(result) {
+    chrome.storage.local.get([
+        'defaultLength',
+        'hidePassword'
+    ], function(result) {
+        // Handle default length
         let passLength = parseInt(result.defaultLength);
         passField.value = generatePassword(passLength);
         sliderValue.innerHTML = passLength;
         slider.value = passLength;
+
+        // Handle hidePassword
+        if (result.hidePassword)
+            document.getElementById('password-field').type = 'password';
     });
     
     generateButton.addEventListener('click', function() {
