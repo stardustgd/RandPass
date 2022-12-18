@@ -51,13 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function generatePassword(length = 16) {
     let chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*'
-    let random_nums = new Uint8Array(1);
+    let array = new Uint32Array(chars.length);
     let password = '';
+
+    window.crypto.getRandomValues(array);
     
-    for (let i = 0; i < length; i++) {
-        let chooser = window.crypto.getRandomValues(random_nums) % chars.length;
-        password += chars.charAt(chooser);
-    }
+    for (let i = 0; i < length; i++)
+        password += chars[array[i] % chars.length];
 
     return password;
 }
