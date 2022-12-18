@@ -11,7 +11,7 @@
 
 body {
     margin: 0.1em 1.25em 1em 1.25em;
-    padding: 0.25em 0.125em;
+    padding: 1em 1em 0.5em 1em;
 }
 
 button {
@@ -25,6 +25,10 @@ button {
 }
 
 div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
     display: flex;
     justify-content: space-around;
 }
@@ -47,11 +51,33 @@ div {
     top: 50%;
 }
 
+.header-top {
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top .header-icon {
+    vertical-align: text-bottom;
+    height: 1.375em;
+    width: 1.375em;
+}
+
 .header-title {
-    display: inline-block;
-    padding: 0 0.125em;
     font-size: 1.25em;
     font-weight: 700;
+    margin: 0;
+    margin-left: 0.25em;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
 
 input[type=text] {
