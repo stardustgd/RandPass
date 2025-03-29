@@ -1,51 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="popup.css" rel="stylesheet">
-    <link href='https://css.gg/css' rel='stylesheet'> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="popup.css" rel="stylesheet" />
+    <link href="https://css.gg/css" rel="stylesheet" />
     <script src="popup.js" defer></script>
     <title>RandPass</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-top">
-            <div>
-                <img class="header-icon" src="assets/icons/icon-48.png">
-                <h1 class="header-title">RandPass</h1>
-            </div>
+      <div class="header-top">
+        <div>
+          <img class="header-icon" src="assets/icons/icon-48.png" />
+          <h1 class="header-title">RandPass</h1>
         </div>
+      </div>
     </header>
     <section class="password-generator">
-        <div class="password-field">
-            <input class="generated-password-field" id="password-field" type="text" spellcheck="false">
-            <div class="buttons">
-                <div class="tooltip">
-                    <span class="tooltiptext">Generate</span>
-                    <button class="btn generated-password-button" id="generate-button">
-                        <i class="gg-sync rotate" id="generate-icon"></i>
-                    </button>
-                </div>
-                <div class="tooltip">
-                    <span class="tooltiptext" id="textTooltip">Copy</span>
-                    <button class="btn generated-password-copy" id="copy-button">
-                        <i class="gg-clipboard" id="copy-icon"></i>
-                    </button>
-                </div>
-            </div>
+      <div class="password-field">
+        <input
+          class="generated-password-field"
+          id="password-field"
+          type="text"
+          spellcheck="false"
+          readonly="readonly"
+        />
+        <div class="buttons">
+          <div class="tooltip">
+            <span class="tooltiptext">Generate</span>
+            <button class="btn generated-password-button" id="generate-button">
+              <img src="assets/rotate-solid.svg" height="20px" />
+            </button>
+          </div>
+          <div class="tooltip">
+            <span class="tooltiptext" id="textTooltip">Copy</span>
+            <button class="btn generated-password-copy" id="copy-button">
+              <img src="assets/clipboard-regular.svg" height="20px" />
+            </button>
+          </div>
         </div>
+      </div>
     </section>
     <section class="length-slider">
-        <input class="length-slider" id="length-slider" type="range" min="1" max="50" value="16">
+      <input
+        class="length-slider"
+        id="length-slider"
+        type="range"
+        min="1"
+        max="50"
+        value="16"
+      />
     </section>
     <section class="length-info">
-        <span class="length-info-min">1</span>
-        <span class="length-info-current">Length:
-            <span class="length-info-current-value" id="length-value">16</span>
-        </span>
-        <span class="length-info-max">50</span>
+      <span class="length-info-min">1</span>
+      <span class="length-info-current"
+        >Length:
+        <span class="length-info-current-value" id="length-value">16</span>
+      </span>
+      <span class="length-info-max">50</span>
     </section>
-</body>
+  </body>
 </html>
