@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   var angle = 0;
   let passField = document.getElementById("password-field");
   let generateButton = document.getElementById("generate-button");
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   chrome.storage.local.get(
     ["defaultLength", "hidePassword"],
-    function (result) {
+    function(result) {
       // Handle default length
       let passLength = parseInt(result.defaultLength) || 25;
       passField.value = generatePassword(passLength);
@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   );
 
-  generateButton.addEventListener("click", function () {
+  generateButton.addEventListener("click", function() {
     passField.value = generatePassword(sliderValue.innerHTML);
-    angle -= 180;
+    angle += 180;
 
     document.getElementById("generate-icon").style.transform =
       `rotate(${angle}deg)`;
   });
 
-  document.getElementById("copy-button").addEventListener("click", function () {
+  document.getElementById("copy-button").addEventListener("click", function() {
     passField.select();
     passField.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(passField.value);
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let tooltip = document.getElementById("textTooltip");
     tooltip.innerHTML = "Copied!";
-    document.getElementById("copy-icon").style.color = "royalblue";
+    document.getElementById("copy-icon").style.fill = "royalblue";
 
     setTimeout(() => {
       tooltip.innerHTML = "Copy";
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, "2000");
   });
 
-  slider.oninput = function () {
+  slider.oninput = function() {
     sliderValue.innerHTML = this.value;
     passField.value = generatePassword(sliderValue.innerHTML);
   };

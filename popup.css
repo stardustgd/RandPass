@@ -1,168 +1,169 @@
 .btn {
-    background-color: white;
-    border: none;
-    color: rgb(27, 27, 27);
-    padding: 12px 16px;
-    margin: 0.25em 0.125em;
-    font-size: 16px;
-    cursor: pointer;
-    size: 100%;
+  background-color: white;
+  border: none;
+  color: rgb(27, 27, 27);
+  padding: 12px 16px;
+  margin: 0.25em 0.125em;
+  font-size: 16px;
+  cursor: pointer;
+  size: 100%;
 }
 
 body {
-    margin: 0.1em 1.25em 1em 1.25em;
-    padding: 1em 1em 0.5em 1em;
+  margin: 0.1em 1.25em 1em 1.25em;
+  padding: 1em 1em 0.5em 1em;
 }
 
 button {
-    width: 100%;
-    margin: 0.25em 0.125em;
+  width: 100%;
+  margin: 0.25em 0.125em;
 }
 
 #copy-icon {
-    color: black;
-    transition: color 0.25s ease-out;
+  color: black;
+  transition: color 0.25s ease-out;
 }
 
 div {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    display: flex;
-    justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: space-around;
 }
 
 .generated-password-button {
-    box-sizing: border-box;
-    padding: 0.25em 0.125em;
+  box-sizing: border-box;
+  padding: 0.25em 0.125em;
 }
 
 .generated-password-copy {
-    box-sizing: border-box;
-    padding: 0.25em 0.125em;
+  box-sizing: border-box;
+  padding: 0.25em 0.125em;
 }
 
 .generated-password-field {
-    box-sizing: border-box; 
-    font-size: 1.5em;
-    margin-right: 0.25em;
-    padding: 0.5em 0.125em;
-    top: 50%;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  margin-right: 0.25em;
+  padding: 0.5em 0.125em;
+  top: 50%;
 }
 
 .header-top {
-    margin-bottom: 0.5em;
-    display: flex;
-    justify-content: space-between;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-top .header-icon {
-    vertical-align: text-bottom;
-    height: 1.375em;
-    width: 1.375em;
+  vertical-align: text-bottom;
+  height: 1.375em;
+  width: 1.375em;
 }
 
 .header-title {
-    font-size: 1.25em;
-    font-weight: 700;
-    margin: 0;
-    margin-left: 0.25em;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
+  font-size: 1.25em;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 0.25em;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
 
 img {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
 
-input[type=text], input[type=password] {
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: #a0a0a0;
-    transition: border-color 0.25s;
+input[type="text"],
+input[type="password"] {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #a0a0a0;
+  transition: border-color 0.25s;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-    border-color: royalblue;
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: royalblue;
 }
 
 .length-info {
-    display: flex;
-    text-align: center;
-    white-space: nowrap;
+  display: flex;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .length-info-min {
-    color: #a0a0a0;
+  color: #a0a0a0;
 }
 
 .length-info-current {
-    font-weight: 700;
-    width: 100%;
+  font-weight: 700;
+  width: 100%;
 }
 
 .length-info-current-value {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .length-info-max {
-    color: #a0a0a0;
+  color: #a0a0a0;
 }
 
 .length-slider {
-    margin-top: 0.5em;
-    outline: none;
-    width: 100%;
+  margin-top: 0.5em;
+  outline: none;
+  width: 100%;
 }
 
 .password-field {
-    padding: 0 0.125em;
+  padding: 0 0.125em;
 }
 
 .rotate {
-    transform: rotate(-180deg);
-    transition: 0.2s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .tooltip {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 50px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -30px;
-    opacity: 0;
-    transition: opacity 0.3s;
+  visibility: hidden;
+  width: 50px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -30px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
